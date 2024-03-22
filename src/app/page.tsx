@@ -77,17 +77,17 @@ export default function Home() {
 
   return (
     <div onClick={animate}>
-      <div className="fixed right-5 top-20 flex gap-5">
+      <div className="fixed right-0 top-20 flex w-full justify-center gap-5 sm:right-5 sm:justify-end">
         <Button
           variant="solid"
           onClick={handleResetCounter}
-          className="z-[99] text-xs font-medium shadow-small dark:text-zinc-100"
+          className="z-[99] border border-zinc-100 bg-transparent text-xs font-medium shadow-small hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
         >
           Reset Counter
         </Button>
         <Button
           variant="solid"
-          className="z-[99] text-xs font-medium shadow-small dark:text-zinc-100"
+          className="z-[99] border border-zinc-100 bg-transparent text-xs font-medium shadow-small hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
         >
           Number of Rotaions: {rotations}
         </Button>

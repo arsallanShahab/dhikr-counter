@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
       <div
         ref={navRef}
-        className="sticky top-0 mx-auto flex max-w-screen-2xl justify-between border-b px-7 py-3 dark:border-zinc-800 sm:px-10"
+        className="sticky top-0 mx-auto flex max-w-screen-2xl justify-between px-7 py-5 dark:border-zinc-800 sm:px-10"
       >
         <Link
           href="/"
