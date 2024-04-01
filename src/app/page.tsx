@@ -5,7 +5,6 @@ import { COUNTER_STORAGE_KEY, ROTATION_STORAGE_KEY } from "@/lib/consts";
 import { useGSAP } from "@gsap/react";
 import { Button } from "@nextui-org/react";
 import { PlusIcon } from "@radix-ui/react-icons";
-import { AnimatePresence, animate, motion, useAnimate } from "framer-motion";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
@@ -13,7 +12,7 @@ const GRADIENTS = [
   "radial-gradient(circle,rgba(115, 55, 254, 0.75) 0%,rgba(255, 255, 255, 0) 50%)",
   "radial-gradient(circle,rgba(255, 105, 180, 0.75) 0%,rgba(255, 255, 255, 0) 50%)", // HotPink
   "radial-gradient(circle,rgba(30, 144, 255, 0.75) 0%,rgba(255, 255, 255, 0) 50%)", // DodgerBlue
-  "radial-gradient(circle,rgba(60, 179, 113, 0.75) 0%,rgba(255, 255, 255, 0) 50%)", // MediumSeaGreen
+  "radial-gradient(circle,rgba(60, 179, 113, 0.75) 0%,rgba(255, 255, 255, 0) 50%)", // MediumSeaGreenj
 ];
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
   ) => {
     if (counter === 100) {
       setRotations(rotations + 1);
-      setCounter(0);
+      setCounter(1);
       localStorage.setItem(ROTATION_STORAGE_KEY, String(rotations + 1));
       localStorage.setItem(COUNTER_STORAGE_KEY, "0");
       return;
