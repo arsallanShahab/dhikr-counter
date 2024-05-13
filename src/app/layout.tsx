@@ -2,13 +2,14 @@ import Navbar from "@/components/navbar";
 import { Providers } from "@/components/providers";
 import Wrapper from "@/components/wrapper";
 import type { Metadata } from "next";
+import Head from "next/head";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title:
-    "Dhikr / Tasbeeh Counter - A simple counter to keep track of your dhikr online for free",
+    "Online Tasbeeh - Dhikr Counter - A simple counter to keep track of your dhikr online for free",
   description:
-    "A simple counter to keep track of your dhikr online for free | Dhikr Counter | Tasbih Counter | Zikr Counter | Tasbeeh Counter",
+    "A simple counter to keep track of your dhikr online for free | Dhikr Counter | Tasbih Counter | Online Zikr Counter | Online Tasbeeh Counter | Tasbeeh Counter",
   keywords: [
     "dhikr",
     "counter",
@@ -85,6 +86,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google" content="notranslate" />
+        <meta http-equiv="Content-Language" content="en" />
+      </Head>
       <body className="bg-white dark:bg-zinc-900">
         <Navbar />
         <Providers>
