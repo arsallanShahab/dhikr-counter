@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import { Providers } from "@/components/providers";
 import Wrapper from "@/components/wrapper";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import Head from "next/head";
 import "./globals.css";
@@ -54,6 +55,7 @@ export const metadata: Metadata = {
     "tasbi online",
     "tasbih counter website",
   ],
+  applicationName: "Online Tasbeeh - Dhikr Counter",
 };
 
 export default function RootLayout({
@@ -63,16 +65,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google" content="notranslate" />
-        <meta http-equiv="Content-Language" content="en" />
-      </Head>
+      <meta name="google" content="notranslate" />
+      <meta http-equiv="Content-Language" content="en" />
+      <meta
+        name="google-site-verification"
+        content="IQBeldYJNpP7j8KEWOuYiHyndRJ1wTHs8-595lTCAvU"
+      />
       <body className="bg-white dark:bg-zinc-900">
         <Navbar />
         <Providers>
           <Wrapper>{children}</Wrapper>
         </Providers>
       </body>
+      <GoogleAnalytics gaId="G-3RBDN6VQGM" />
     </html>
   );
 }
