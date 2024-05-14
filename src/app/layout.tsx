@@ -22,40 +22,38 @@ export const metadata: Metadata = {
     "dhikr counter online",
     "dhikr counter app",
     "dhikr counter online free",
-    "dhikr counter online free",
     "tasbih counter",
     "tasbih counter online",
     "tasbih counter app",
-    "tasbih counter online free",
     "tasbih counter online free",
     "zikr counter",
     "zikr counter online",
     "zikr counter app",
     "zikr counter online free",
-    "zikr counter online free",
     "tasbeeh counter online",
     "tasbeeh counter app",
     "tasbeeh counter online free",
-    "tasbeeh counter online free",
     "zikir counter",
     "online tasbeeh counter",
-    "tasbeeh counter online",
-    "tasbih counter online",
     "online tasbih",
     "online tasbeeh",
-    "online counter tasbeeh",
-    "counter tasbeeh online",
-    "tasbeih online",
+    "online counter tasbeeh | english",
+    "counter tasbeeh online | english",
+    "tasbeih online | english",
     "online tasbeh",
     "online tasbi",
     "counter online tasbeeh",
     "virtual tasbeeh",
     "digital tasbeeh",
     "digital tasbih",
-    "tasbi online",
+    "tasbih online",
     "tasbih counter website",
   ],
   applicationName: "Online Tasbeeh - Dhikr Counter",
+  other: {
+    "google-site-verification": "IQBeldYJNpP7j8KEWOuYiHyndRJ1wTHs8-595lTCAvU",
+    google: "notranslate",
+  },
 };
 
 export default function RootLayout({
@@ -65,12 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="google" content="notranslate" />
       <meta http-equiv="Content-Language" content="en" />
-      <meta
-        name="google-site-verification"
-        content="IQBeldYJNpP7j8KEWOuYiHyndRJ1wTHs8-595lTCAvU"
-      />
       <body className="bg-white dark:bg-zinc-900">
         <Navbar />
         <Providers>
